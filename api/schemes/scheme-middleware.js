@@ -68,7 +68,9 @@ const validateStep = (req, res, next) => {
         status: 400,
         message: "invalid step"
       })
-    }
+  }else{
+    next();
+  }
 }
 
 module.exports = {
